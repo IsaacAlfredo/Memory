@@ -25,9 +25,7 @@ Nesses gráficos, o eixo X é o tempo do execução, enquanto o Y é a observaç
 
 No gráfico da busca binária, podemos perceber que o tempo de execução é relativamente parecido do pior ao melhor caso, independente se o elemento estar no começo ou final da lista. O mesmo não vale para a busca linear, que tem como um grande problema essa disparidade onde o pior caso (último item da lista) demora muito para ser encontrado.
 
-Nesse experimento, a média de tempo de execução do algoritmo da busca binária foi Xns, enquanto a busca linear foi Yns
-
-3- Buscando um item a cada 100 da lista, resultando em 100.000 observações, que foram utilizadas para gerar os gráficos de dispersão a seguir:
+3- Buscando um item a cada 1000 da lista, resultando em 10.000 observações, que foram utilizadas para gerar os gráficos de dispersão a seguir:
 ![newplot](https://github.com/IsaacAlfredo/Memory/assets/60722914/365ea851-b663-47ea-b0bc-c78f01cfc697)
 ![newplot (4)](https://github.com/IsaacAlfredo/Memory/assets/60722914/c20f9657-fb8e-4274-9716-6c2a428ef3cd)
 Os resultados foram praticamente o mesmo do experimento anterior, porém com mais amostras — embora alguns itens na busca linear tenham ficado "tortos", talvez por alguma influencia no ambiente durante a execução, porém não é algo que eu saiba controlar.
@@ -35,4 +33,4 @@ Os resultados foram praticamente o mesmo do experimento anterior, porém com mai
 Por fim, podemos observar a média de tempo de execução entre cada uma das situações na imagem a seguir, bem como o tempo total das execuções, dado pela barra de progresso da biblioteca alive_progress:
 ![Screenshot_2](https://github.com/IsaacAlfredo/Memory/assets/60722914/66dcd543-696d-4b64-8c67-50e4a34141ad)
 
-Podemos, mais uma vez, constatar a diferença grotesca no tempo de execução dos algoritmos. Tanto em tempo médio quanto em tempo total, é simplesmente absurdo a diferença de eficiência de ambos em uma lista ordenada.
+Podemos, mais uma vez, constatar a diferença grotesca no tempo de execução dos algoritmos. Tanto em tempo médio quanto em tempo total, é simplesmente absurdo a diferença de eficiência de ambos em uma lista ordenada. Também tentei fazer o experimento com 100.000 observações, porém a busca linear demorou tantas horas que eu não sabia mais se ainda estava rodando ou tinha bugado de alguma forma (o motivo pelo qual eu decidi usar a barra de progresso).
